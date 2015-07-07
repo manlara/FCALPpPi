@@ -20,19 +20,11 @@ hd_root -PPLUGINS=FCALPpPi -PTT:SYSTEMS_TO_PARSE=FCAL fcal_n6_132.0 -o test.root
 ##### FCAL_Pulse = new TTree("FCAL_Pulse","Pulse information");
 ####  Use nsa + nsb for integral
 ##### FCAL_Analysis = new TTree("FCAL_Analysis","Pulse analysis");
-
-// using the samples around the peak for the integral
-
-FCAL_Analysis2 = new TTree("FCAL_Analysis2","Pulse analysis 2");
-
-
-FCAL_Correlation = new TTree("FCAL_Correlation","Pulse correlations");
-
-
-FCAL_SingleCorrelation = new TTree("FCAL_SingleCorrelation","Single Pulse correlation");
-
-
-FCAL_Waveforms = new TTree("FCAL_Waveforms","Waveforms");
+####  Using the samples around the peak for the integral
+##### FCAL_Analysis2 = new TTree("FCAL_Analysis2","Pulse analysis 2");
+##### FCAL_Correlation = new TTree("FCAL_Correlation","Pulse correlations");
+##### FCAL_SingleCorrelation = new TTree("FCAL_SingleCorrelation","Single Pulse correlation");
+##### FCAL_Waveforms = new TTree("FCAL_Waveforms","Waveforms");
 
 
 #! Important
